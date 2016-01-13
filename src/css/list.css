@@ -1,0 +1,6 @@
+/* 列表定义 */
+.list { margin-bottom: 25px; }
+.list:last-child { margin-bottom: 0; }
+.list > .item { display: flex; min-height: 88px; line-height: 40px; padding: 14px 15px; border-bottom: 1px solid #ddd; }
+.list > .item > .text { margin-top: auto; margin-bottom: auto; }
+.list > .item:first-child { border-top: 1px solid #E5E5E5; }
