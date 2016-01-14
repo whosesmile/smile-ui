@@ -1,0 +1,7 @@
+/* 栅格布局 */
+.flexbox { text-align: left; display: -webkit-box; display: -webkit-flex; display: flex; }
+.flexbox > * { -webkit-box-flex: 1; -webkit-flex: 1; flex: 1; }
+.flexbox > * { width: 100%; }
+
+/* 紧凑栅格 子项目间不留空白 反之留存间隙 */
+.flexbox:not(.compact) > *:not(:last-child) { margin-right: 20px; }

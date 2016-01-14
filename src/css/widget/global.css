@@ -1,0 +1,21 @@
+/* 网站私有定制 */
+*, *:before, *:after { font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); -webkit-font-smoothing: antialiased; }
+html, body { min-height: 100%; }
+body { -webkit-user-select: none; user-select: none; }
+a, img { -webkit-touch-callout: none; }
+body { background-color: #fff; }
+body.light { background-color: #f5f5f9; }
+body, input, textarea, select, button { font-size: 1rem; line-height: 1.5; color: #333; font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif; }
+input { line-height: normal; }
+a { color: #0af; text-decoration: none; }
+.pull-left { float: left; }
+.pull-right { float: right; }
+.user-select { -webkit-user-select: auto; user-select: auto; }
+.clearfix:after { content: '\0200'; visibility: hidden; clear: both; display: block; font-size: 0; height: 0; }
+.center-block { margin-left: auto; margin-right: auto; display: block; width: 100%; }
+.container { padding-left: 20px; padding-right: 20px; }
+
+/* 仅供PC调试使用 */
+@media only screen and (min-device-width:1366px) {
+  body { max-width: 750px; margin-left: auto; margin-right: auto; }
+}

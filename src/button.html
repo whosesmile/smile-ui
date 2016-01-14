@@ -8,16 +8,16 @@
   <meta content="black" name="apple-mobile-web-app-status-bar-style" />
   <meta content="telephone=no,email=no,address=no" name="format-detection" />
   <script type="text/javascript" src="./js/flexible.js"></script>
-  <link rel="stylesheet" type="text/css" href="./css/base.css" />
-  <link rel="stylesheet" type="text/css" href="./css/button.css" />
+  <link rel="stylesheet" type="text/css" href="./css/ui.css" />
 </head>
 <body ontouchstart="">
-  <div style="padding:15px;">
-    <button class="button">默认按钮（根据平台会不同）</button>
+  <div class="hspace">
+    <button class="button">默认按钮（根据平台会不同，不建议使用）</button>
     <button class="button primary">蓝色按钮</button>
     <button class="button warning">橙色按钮</button>
+    <button class="button success">绿色按钮</button>
     <button class="button default">白色按钮</button>
-    <button class="button default" disabled>禁用按钮</button>
+    <button class="button success" disabled>禁用按钮</button>
 
     <button class="button warning square">直角按钮</button>
 
@@ -25,12 +25,13 @@
     <button class="button warning inline">内联按钮</button>
     <button class="button default inline">内联按钮</button>
 
-    <button class="button primary inline tiny">tiny蓝色按钮</button>
-    <button class="button primary inline little">little蓝色按钮</button>
-    <button class="button primary inline small">small蓝色按钮</button>
+    <button class="button primary inline tiny">tiny按钮</button>
+    <button class="button warning inline little">little按钮</button>
+    <button class="button success inline small">small按钮</button>
 
     <button class="button primary light">蓝边框按钮</button>
     <button class="button warning light">橙边框按钮</button>
+    <button class="button success light">绿边框按钮</button>
 
     <div class="button-group">
       <button class="button primary light">按钮组合</button>

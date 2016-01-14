@@ -1,0 +1,31 @@
+/* 水平间距 */
+.hspace, .hspace[mode~="20px"] { margin-left: 20px; margin-right: 20px; }
+.hspace[mode~="10px"] { margin-left: 10px; margin-right: 10px; }
+.hspace[mode~="30px"] { margin-left: 30px; margin-right: 30px; }
+.hspace[mode~="40px"] { margin-left: 40px; margin-right: 40px; }
+.hspace[mode~="50px"] { margin-left: 50px; margin-right: 50px; }
+.hspace[mode~="60px"] { margin-left: 60px; margin-right: 60px; }
+
+/* 水平补白 */
+.hspace.inset, .hspace.inset[mode~="20px"] { padding-left: 20px; padding-right: 20px; }
+.hspace.inset[mode~="10px"] { padding-left: 10px; padding-right: 10px; }
+.hspace.inset[mode~="30px"] { padding-left: 30px; padding-right: 30px; }
+.hspace.inset[mode~="40px"] { padding-left: 40px; padding-right: 40px; }
+.hspace.inset[mode~="50px"] { padding-left: 50px; padding-right: 50px; }
+.hspace.inset[mode~="60px"] { padding-left: 60px; padding-right: 60px; }
+
+/* 垂直间距 */
+.vspace, .vspace[mode~="20px"] { margin-top: 20px; margin-bottom: 20px; }
+.vspace[mode~="10px"] { margin-top: 10px; margin-bottom: 10px; }
+.vspace[mode~="30px"] { margin-top: 30px; margin-bottom: 30px; }
+.vspace[mode~="40px"] { margin-top: 40px; margin-bottom: 40px; }
+.vspace[mode~="50px"] { margin-top: 50px; margin-bottom: 50px; }
+.vspace[mode~="60px"] { margin-top: 60px; margin-bottom: 60px; }
+
+/* 垂直补白 */
+.vspace.inset, .vspace.inset[mode~="20px"] { padding-top: 20px; padding-bottom: 20px; }
+.vspace.inset[mode~="10px"] { padding-top: 10px; padding-bottom: 10px; }
+.vspace.inset[mode~="30px"] { padding-top: 30px; padding-bottom: 30px; }
+.vspace.inset[mode~="40px"] { padding-top: 40px; padding-bottom: 40px; }
+.vspace.inset[mode~="50px"] { padding-top: 50px; padding-bottom: 50px; }
+.vspace.inset[mode~="60px"] { padding-top: 60px; padding-bottom: 60px; }

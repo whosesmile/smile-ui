@@ -1,0 +1,27 @@
+/* 对齐 */
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+/* 溢出 */
+.text-ellipsis { width: auto; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* 大小 */
+.text-xxxl { font-size: 48px; }
+.text-xxl { font-size: 40px; }
+.text-xl { font-size: 36px; }
+.text-lg { font-size: 34px; }
+.text-md { font-size: 32px; }
+.text-sm { font-size: 28px; }
+.text-xs { font-size: 24px; }
+
+/* 颜色 */
+.text-white { color: #fff; }
+.text-black { color: #333; }
+.text-dark { color: #666; }
+.text-gray { color: #999; }
+.text-light { color: #ccc; }
+.text-blue { color: #0ae; }
+.text-orange { color: #ff5a32; }
+.text-green { color: #00bb44; }
+.text-red { color: #f4333c; }
