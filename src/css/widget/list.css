@@ -29,5 +29,6 @@
 
 /* 头像排版 */
 .list > .item > .avatar { margin-right: 20px; }
-.list > .item > .avatar img, .list > .item > .avatar img[mode="64px"] { display: block; width: 64px; height: 64px; }
-.list > .item > .avatar img[mode="90px"] { width: 90px; height: 90px; }
+.list > .item > .avatar img, .list > .item > .avatar img[mode="58px"] { display: block; width: 58px; height: 58px; }
+.list > .item > .avatar img[mode="84px"] { width: 84px; height: 84px; }
+.list > .item > .avatar img[mode="126px"] { width: 126px; height: 126px; }
