@@ -15,14 +15,14 @@
 .list > .item > .extra { color: #999; font-size: 28px; text-align: right; }
 
 /* 表头定义 */
-.list > .item-divider { font-size: 28px; padding: 12px 30px; color: #333; text-align: left; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.list > .item-divider { font-size: 28px; padding: 12px 30px; text-align: left; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .list > .item-divider + .item { background-size: 0 0, 30px 1px, 100% 1px, 100% 1px; }
 .list > .item-divider + .item:last-child { background-size: 0 0, 0 0, 100% 1px, 100% 1px; }
 .list.thread > .item-divider + .item { background-size: 0 0, 0 0, 100% 1px, 100% 1px; }
 
 /* ICON定义 */
-.list > .item > .icon:first-child { text-align: left; margin-right: 16px; }
-.list > .item > .icon:last-child { color: #999; font-size: 28px; text-align: right; margin-left: 16px; }
+.list > .item > .icon:first-child { min-width: 32px; text-align: left; margin-right: 16px; }
+.list > .item > .icon:last-child { min-width: 32px; font-size: 28px; text-align: right; margin-left: 16px; }
 
 /* 双行文本 */
 .list > .item > .text > .brief { font-size: 26px; color: #999; line-height: 40px; margin-top: 2px; }

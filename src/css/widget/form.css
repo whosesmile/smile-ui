@@ -1,0 +1,11 @@
+.list > .item.item-input button, .list > .item.item-input input, .list > .item.item-input select, .list > .item.item-input textarea { -webkit-appearance: none; font-size: 30px; width: 100%; padding: 0; margin: 0; border: none; background-color: transparent }
+.list > .item.item-input input { color: #333; padding-top: 10px; padding-bottom: 10px; }
+.list > .item.item-input .label { margin-left: 0; margin-right: 30px; min-width: 64px; }
+.list > .item.item-input .label[mode~="96px"] { min-width: 96px; }
+.list > .item.item-input .label[mode~="128px"] { min-width: 128px; }
+.list > .item.item-input .label[mode~="160px"] { min-width: 160px; }
+.list > .item.item-input .label[mode~="192px"] { min-width: 192px; }
+.list > .item.item-input .control { -webkit-box-flex: 1; -webkit-flex: 1; flex: 1; }
+.list > .item.item-error { position: relative; z-index: 10; color: #f4333c; background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) left top no-repeat, -webkit-gradient(linear, left bottom, left top, from(#fff), to(#fff)) left bottom no-repeat, -webkit-gradient(linear, left top, left bottom, from(#f00), to(#f00)) left top no-repeat, -webkit-gradient(linear, left bottom, left top, from(#f00), to(#f00)) left bottom no-repeat #fff; background: -webkit-linear-gradient(#fff, #fff) left top no-repeat, -webkit-linear-gradient(#fff, #fff) left bottom no-repeat, -webkit-linear-gradient(#f00, #f00) left top no-repeat, -webkit-linear-gradient(#f00, #f00) left bottom no-repeat #fff; background: linear-gradient(#fff, #fff) left top no-repeat, linear-gradient(#fff, #fff) left bottom no-repeat, linear-gradient(#f00, #f00) left top no-repeat, linear-gradient(#f00, #f00) left bottom no-repeat #fff; background-size: 30px 1px, 30px 1px, 100% 1px, 100% 1px; }
+.list > .item.item-error:last-child { background-size: 30px 1px, 0 0, 100% 1px, 100% 1px }
+.list > .item.item-input.item-error button, .list > .item.item-input.item-error input, .list > .item.item-input.item-error select, .list > .item.item-input.item-error textarea { color: #f4333c; }
