@@ -7,4 +7,4 @@ fieldset, img { border: 0; }
 li { list-style: none; }
 caption, th { text-align: left; }
 q:before, q:after { content: ""; }
-input:password { ime-mode: disabled; }
+input:password { ime-ui-mode: disabled; }

@@ -1,0 +1,11 @@
+.article { font-size: 26px; line-height: 1.5; padding: 0 30px; margin: 40px 0; }
+.article h2 { font-size: 36px; font-weight: 900; color: #000; line-height: 100%; }
+.article time { display: block; margin: 10px 0 30px; font-size: 24px; color: #999; }
+.article dl, .article ul, .article ol { margin: 0 0 36px; }
+.article dl dt { font-size: 28px; font-weight: 900; color: #000; margin-bottom: 6px; }
+.article dl dd { line-height: 40px; }
+.article p { margin-bottom: 32px; }
+.article img { width: 100%; vertical-align: bottom; }
+.article table { width: 100%; margin-bottom: 32px; }
+.article table th, .article table td { border-bottom: 1px solid #ddd; padding: 10px 6px; }
+.article[ui-mode="center"] h2, .article[ui-mode="center"] time, .article[ui-mode="center"] table th, .article[ui-mode="center"] table td { text-align: center; }
