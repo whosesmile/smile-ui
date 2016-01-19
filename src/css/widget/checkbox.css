@@ -1,6 +1,6 @@
 /* 定义位置 */
-.list > .item > input[type='checkbox']:first-child, .list > .item > input[type='radio']:first-child { float: right; margin-right: 16px; }
-.list > .item > input[type='checkbox']:last-child, .list > .item > input[type='radio']:last-child { float: right; margin-left: 16px; }
+.list > .item > input[type='checkbox']:first-child, .list > .item > input[type='radio']:first-child { margin-right: 16px; }
+.list > .item > input[type='checkbox']:last-child, .list > .item > input[type='radio']:last-child { margin-left: 16px; }
 
 /* 单选框 */
 input[type='radio'] { position: relative; top: -2px; width: 40px; height: 40px; border-radius: 50%; overflow: hidden; vertical-align: middle; border: none; background: transparent; }

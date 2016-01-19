@@ -25,10 +25,10 @@
 .list > .item > .icon:last-child { min-width: 32px; font-size: 28px; text-align: right; margin-left: 16px; }
 
 /* 多行文本 */
-.list > .item > .text > .brief { font-size: 26px; color: #999; line-height: 40px; margin-top: 2px; }
+.list > .item > .text > .brief { font-size: 26px; color: #999; line-height: 30px; margin-top: 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
 /* 头像排版 */
 .list > .item > .avatar { margin-right: 20px; }
 .list > .item > .avatar img, .list > .item > .avatar img[mode="58px"] { display: block; width: 58px; height: 58px; }
-.list > .item > .avatar img[mode="84px"] { width: 84px; height: 84px; }
-.list > .item > .avatar img[mode="126px"] { width: 126px; height: 126px; }
+.list > .item > .avatar img[mode="80px"] { width: 80px; height: 80px; }
+.list > .item > .avatar img[mode="110px"] { width: 120px; height: 110px; }
