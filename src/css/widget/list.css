@@ -1,11 +1,11 @@
-/* 缩进边框 */
+/* 缩进列表 */
 .list { margin-top: 20px; margin-bottom: 20px; }
 .list > .item { display: -webkit-box; display: -webkit-flex; display: flex; min-height: 88px; padding: 12px 30px; color: #333; text-align: left; overflow: hidden; -webkit-box-pack: center; -webkit-box-align: center; -webkit-align-items: center; align-items: center; background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) left top no-repeat, -webkit-gradient(linear, left bottom, left top, from(#fff), to(#fff)) left bottom no-repeat, -webkit-gradient(linear, left top, left bottom, from(#e5e5e5), to(#e5e5e5)) left top no-repeat, -webkit-gradient(linear, left bottom, left top, from(#e5e5e5), to(#e5e5e5)) left bottom no-repeat #fff; background: -webkit-linear-gradient(#fff, #fff) left top no-repeat, -webkit-linear-gradient(#fff, #fff) left bottom no-repeat, -webkit-linear-gradient(#e5e5e5, #e5e5e5) left top no-repeat, -webkit-linear-gradient(#e5e5e5, #e5e5e5) left bottom no-repeat #fff; background: linear-gradient(#fff, #fff) left top no-repeat, linear-gradient(#fff, #fff) left bottom no-repeat, linear-gradient(#e5e5e5, #e5e5e5) left top no-repeat, linear-gradient(#e5e5e5, #e5e5e5) left bottom no-repeat #fff; background-size: 30px 1px, 30px 1px, 0 0, 100% 1px; }
 .list > .item:first-child { background-size: 0 0, 30px 1px, 100% 1px, 100% 1px; }
 .list > .item:last-child { background-size: 30px 1px, 0 0, 0 0, 100% 1px; }
 .list > .item:first-child:last-child { background-size: 0 0, 0 0, 100% 1px, 100% 1px; }
 
-/* 通栏边框 */
+/* 通栏列表 */
 .list.thread > .item { background-size: 0 0, 0 0, 0 0, 100% 1px; }
 .list.thread > .item:first-child { background-size: 0 0, 0 0, 100% 1px, 100% 1px; }
 .list.thread > .item:last-child { background-size: 0 0, 0 0, 0 0, 100% 1px; }
@@ -24,7 +24,7 @@
 .list > .item > .icon:first-child { min-width: 32px; text-align: left; margin-right: 16px; }
 .list > .item > .icon:last-child { min-width: 32px; font-size: 28px; text-align: right; margin-left: 16px; }
 
-/* 双行文本 */
+/* 多行文本 */
 .list > .item > .text > .brief { font-size: 26px; color: #999; line-height: 40px; margin-top: 2px; }
 
 /* 头像排版 */

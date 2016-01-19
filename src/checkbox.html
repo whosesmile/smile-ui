@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>单选及复选框</title>
+    <meta charset="utf-8" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no,email=no,address=no" name="format-detection" />
+    <script type="text/javascript" src="./js/flexible.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/ui.css" />
+  </head>
+  <body class="light" ontouchstart="">
+    <div class="list">
+      <div class="item-divider text-dark">复选框 <span class="text-xs text-light">(居右)</span></div>
+      <label class="item">
+        <span class="text">少年的时光就是晃</span>
+        <input type="checkbox" checked />
+      </label>
+      <label class="item">
+        <span class="text">用大把时间彷徨，只用几个瞬间来成长。</span>
+        <input type="checkbox" />
+      </label>
+    </div>
+    <div class="list">
+      <div class="item-divider text-dark">复选框 <span class="text-xs text-light">(居左)</span></div>
+      <label class="item">
+        <input type="checkbox" checked />
+        <span class="text">少年的时光就是晃</span>
+      </label>
+      <label class="item">
+        <input type="checkbox" />
+        <span class="text">用大把时间彷徨，只用几个瞬间来成长。</span>
+      </label>
+    </div>
+    <div class="list">
+      <div class="item-divider text-dark">禁用选框 <span class="text-xs text-light">(居左)</span></div>
+      <label class="item">
+        <input type="checkbox" checked disabled />
+        <span class="text">少年的时光就是晃</span>
+      </label>
+      <label class="item">
+        <input type="checkbox" disabled />
+        <span class="text">用大把时间彷徨，只用几个瞬间来成长。</span>
+      </label>
+    </div>
+    <div class="list">
+      <div class="item-divider text-dark">大小选框 <span class="text-xs text-light">(居左)</span></div>
+      <label class="item">
+        <input type="checkbox" class="small" checked />
+        <span class="text">小号复选框</span>
+      </label>
+      <label class="item">
+        <input type="checkbox" class="large" />
+        <span class="text">
+          大号复选框
+          <div class="brief">少年时光，用大把时间彷徨，只用几个瞬间来成长</div>
+        </span>
+      </label>
+    </div>
+    <div class="list">
+      <div class="item-divider text-dark">带头像位置</div>
+      <label class="item">
+        <input type="checkbox" />
+        <div class="avatar">
+          <img src="http://img4.duitang.com/uploads/item/201209/08/20120908175146_SwckL.jpeg" mode="58px" />
+        </div>
+        <span class="text">少年时光</span>
+      </label>
+      <label class="item">
+        <input type="checkbox" class="large" />
+        <div class="avatar">
+          <img src="http://img4.duitang.com/uploads/item/201209/08/20120908175146_SwckL.jpeg" mode="126px" />
+        </div>
+        <span class="text">
+          少年时光
+          <div class="brief">用大把时间彷徨</div>
+        </span>
+      </label>
+    </div>
+    <div class="list">
+      <div class="item-divider text-dark">单选框 <span class="text-xs text-light">(大小及位置同复选框)</span></div>
+      <label class="item">
+        <span class="text">少年的时光就是晃</span>
+        <input type="radio" name="only" checked />
+      </label>
+      <label class="item">
+        <span class="text">用大把时间彷徨，只用几个瞬间来成长。</span>
+        <input type="radio" name="only" />
+      </label>
+    </div>
+    <div class="list">
+      <div class="item-divider text-dark">禁用单选框 <span class="text-xs text-light">(大小及位置同复选框)</span></div>
+      <label class="item">
+        <span class="text">少年的时光就是晃</span>
+        <input type="radio" name="demo" disabled checked />
+      </label>
+      <label class="item">
+        <span class="text">用大把时间彷徨，只用几个瞬间来成长。</span>
+        <input type="radio" name="demo" disabled />
+      </label>
+    </div>
+    <div class="list">
+      <div class="item-divider text-orange">单选框模拟复选框</div>
+      <label class="item">
+        <div class="avatar">
+          <img src="http://image-assets.b0.upaiyun.com/2016/01/upload_36732b377c71136b4f1005d8eeea76cf.png" mode="84px" />
+        </div>
+        <span class="text">
+          支付宝
+          <div class="brief">支付宝支付</div>
+        </span>
+        <input type="radio" mode="checkbox" class="large" name="imitate" checked />
+      </label>
+      <label class="item">
+        <div class="avatar">
+          <img src="http://image-assets.b0.upaiyun.com/2016/01/upload_5cf09148f9e4b94b7a708780968eebf3.png" mode="84px" />
+        </div>
+        <span class="text">
+          微信
+          <div class="brief">微信支付</div>
+        </span>
+        <input type="radio" mode="checkbox" class="large" name="imitate" />
+      </label>
+      <label class="item">
+        <div class="avatar">
+          <img src="http://image-assets.b0.upaiyun.com/2016/01/upload_bd4d34a8d4a71cdc31f87d228e4d0b24.png" mode="84px" />
+        </div>
+        <span class="text">
+          现金
+          <div class="brief">现金支付</div>
+        </span>
+        <input type="radio" mode="checkbox" class="large" name="imitate" />
+      </label>
+      <label class="item">
+        <div class="avatar">
+          <img src="http://image-assets.b0.upaiyun.com/2016/01/upload_2501b33061bb07d44a9777cee655cd20.png" mode="84px" />
+        </div>
+        <span class="text">
+          POS
+          <div class="brief">POS支付</div>
+        </span>
+        <input type="radio" mode="checkbox" class="large" name="imitate" />
+      </label>
+    </div>
+    <div class="hspace vspace text-center" mode="20px">
+      <label>
+        <input type="checkbox" />
+        我已阅读并同意<span class="text-blue">《协议》</span><em class="text-xs text-light">(协议文本)</em>
+      </label>
+    </div>
+    <div class="hspace vspace text-center" mode="20px">
+      <label>
+        <input type="checkbox" />
+        我已阅读并同意<a href="">《协议》</a><em class="text-xs text-light">(协议链接)</em>
+      </label>
+    </div>
+    <div class="hspace vspace" mode="20px">
+      <button class="button warning">注册</button>
+    </div>
+  </body>
+</html>

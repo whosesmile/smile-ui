@@ -47,6 +47,9 @@ gulp.task('concat', ['px2rem'], function () {
     target + '/css/widget/flexbox.css',
     target + '/css/widget/space.css',
     target + '/css/widget/text.css',
+    target + '/css/widget/list.css',
+    target + '/css/widget/form.css',
+    target + '/css/widget/checkbox.css',
     target + '/css/widget/**/*',
   ]).pipe(concat('css/ui.css')).pipe(gulp.dest(target)).pipe(connect.reload());
 });
