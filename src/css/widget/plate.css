@@ -1,0 +1,6 @@
+.plate { display: -webkit-box; display: -webkit-flex; display: flex; height: 960px; height: 100vh; align-items: center; }
+.plate > .draw { -webkit-box-flex: 1; -webkit-flex: 1; flex: 1; text-align: center; }
+.plate > .draw img { display: block; width: 300px; height: 300px; margin: 0 auto; }
+.plate > .draw .title { color: #999; margin-top: 50px; font-weight: normal; }
+.plate > .draw .brief { color: #999; margin-top: 4px; }
+.plate > .draw .interact { margin: 90px 30px; }

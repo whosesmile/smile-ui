@@ -6,6 +6,8 @@
 .hspace:not(.inset)[ui-mode~="40px"] { margin-left: 40px; margin-right: 40px; }
 .hspace:not(.inset)[ui-mode~="50px"] { margin-left: 50px; margin-right: 50px; }
 .hspace:not(.inset)[ui-mode~="60px"] { margin-left: 60px; margin-right: 60px; }
+.hspace:not(.inset)[ui-mode~="70px"] { margin-left: 70px; margin-right: 70px; }
+.hspace:not(.inset)[ui-mode~="80px"] { margin-left: 80px; margin-right: 80px; }
 
 /* 水平补白 */
 .hspace.inset, .hspace.inset[ui-mode~="20px"] { padding-left: 20px; padding-right: 20px; }
@@ -15,6 +17,8 @@
 .hspace.inset[ui-mode~="40px"] { padding-left: 40px; padding-right: 40px; }
 .hspace.inset[ui-mode~="50px"] { padding-left: 50px; padding-right: 50px; }
 .hspace.inset[ui-mode~="60px"] { padding-left: 60px; padding-right: 60px; }
+.hspace.inset[ui-mode~="70px"] { padding-left: 70px; padding-right: 70px; }
+.hspace.inset[ui-mode~="80px"] { padding-left: 80px; padding-right: 80px; }
 
 /* 垂直间距 */
 .vspace:not(.inset), .vspace:not(.inset)[ui-mode~="20px"] { margin-top: 20px; margin-bottom: 20px; }
@@ -24,6 +28,8 @@
 .vspace:not(.inset)[ui-mode~="40px"] { margin-top: 40px; margin-bottom: 40px; }
 .vspace:not(.inset)[ui-mode~="50px"] { margin-top: 50px; margin-bottom: 50px; }
 .vspace:not(.inset)[ui-mode~="60px"] { margin-top: 60px; margin-bottom: 60px; }
+.vspace:not(.inset)[ui-mode~="70px"] { margin-top: 70px; margin-bottom: 70px; }
+.vspace:not(.inset)[ui-mode~="80px"] { margin-top: 80px; margin-bottom: 80px; }
 
 /* 垂直补白 */
 .vspace.inset, .vspace.inset[ui-mode~="20px"] { padding-top: 20px; padding-bottom: 20px; }
@@ -33,3 +39,5 @@
 .vspace.inset[ui-mode~="40px"] { padding-top: 40px; padding-bottom: 40px; }
 .vspace.inset[ui-mode~="50px"] { padding-top: 50px; padding-bottom: 50px; }
 .vspace.inset[ui-mode~="60px"] { padding-top: 60px; padding-bottom: 60px; }
+.vspace.inset[ui-mode~="70px"] { padding-top: 70px; padding-bottom: 70px; }
+.vspace.inset[ui-mode~="80px"] { padding-top: 80px; padding-bottom: 80px; }
