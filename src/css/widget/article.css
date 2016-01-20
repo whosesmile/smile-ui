@@ -6,6 +6,6 @@
 .article dl dd { line-height: 40px; }
 .article p { margin-bottom: 32px; }
 .article img { width: 100%; vertical-align: bottom; }
-.article table { width: 100%; margin-bottom: 32px; }
+.article table { width: 100%; margin-bottom: 32px; } 
 .article table th, .article table td { border-bottom: 1px solid #ddd; padding: 10px 6px; }
 .article[ui-mode="center"] h2, .article[ui-mode="center"] time, .article[ui-mode="center"] table th, .article[ui-mode="center"] table td { text-align: center; }
