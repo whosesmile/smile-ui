@@ -1,3 +1,8 @@
+/* 仅供PC调试使用 */
+@media only screen and (min-device-width:1366px) {
+  body { max-width: 750px; margin-left: auto !important; margin-right: auto !important; }
+}
+
 /* reset */
 *, *:before, *:after { -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 *:focus { outline: none; }

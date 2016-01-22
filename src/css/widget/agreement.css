@@ -1,0 +1,6 @@
+.agreement { display: block; padding: 40px; word-break: break-all; }
+.agreement .title { text-align: center; font-size: 32px; line-height: 36px; font-weight: 400; color: #000; margin: 0 auto 40px; }
+.agreement .content { color: #666; font-size: 28px; }
+.agreement .content .strong { font-weight: 700; }
+.agreement .content h4 { font-size: 28px; color: #333; margin: 10px 0 0; }
+.agreement .content p { margin: 0 0 20px; word-break: break-all; }
