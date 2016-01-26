@@ -5,6 +5,7 @@ var concat = require('gulp-concat');
 var sequence = require('run-sequence');
 var uglify = require('gulp-uglify');
 var connect = require('gulp-connect');
+var insert = require('gulp-insert');
 var minify = require('gulp-minify-css');
 var px2rem = require('gulp-smile-px2rem');
 
@@ -56,6 +57,14 @@ gulp.task('concat:css', ['px2rem'], function () {
   ]).pipe(concat('css/ui.css')).pipe(gulp.dest(target)).pipe(connect.reload());
 });
 
+// insert debug css
+gulp.task('concat:debug', ['concat:css'], function () {
+  return gulp.src(target + '/css/ui.css')
+    .pipe(insert.prepend('@media only screen and (min-device-width:1366px) {body { max-width: 750px; margin-left: auto !important; margin-right: auto !important; }}'))
+    .pipe(gulp.dest(target + '/css'))
+    .pipe(connect.reload());
+});
+
 // minify css
 gulp.task('minify:css', ['concat:css'], function () {
   return gulp.src(target + '/css/**/*')
@@ -76,7 +85,7 @@ gulp.task('uglify:js', function () {
 // watch file change
 gulp.task('watch', function () {
   gulp.watch(['src/images/**/*', 'src/*.*'], ['sync:source']);
-  gulp.watch(['src/css/**/*'], ['concat:css']);
+  gulp.watch(['src/css/**/*'], ['concat:debug']);
 });
 
 // connect server
@@ -90,11 +99,11 @@ gulp.task('connect', function () {
 
 // Default task clean temporaries directories and launch the main optimization build task
 gulp.task('default', function () {
-  sequence('clean', ['sync:source', 'sync:js', 'concat:css'], ['connect', 'watch']);
+  sequence('clean', ['sync:source', 'sync:js', 'concat:debug'], ['connect', 'watch']);
 });
 
 // build project
 gulp.task('dist', function () {
   target = 'dist/';
-  sequence('clean', ['sync:source', 'concat:css', 'uglify:js'], ['connect', 'watch']);
+  sequence('clean', ['sync:source', 'minify:css', 'uglify:js'], ['connect']);
 });

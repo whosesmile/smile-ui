@@ -5,7 +5,7 @@
 .bar.bar-header > a { padding: 20px 30px; }
 .bar.bar-header > a:first-child { margin-left: -30px; }
 .bar.bar-header > a:last-child { margin-right: -30px; }
-.bar.bar-footer.bar-fixed { position: fixed; bottom: 0; }
+.bar.bar-footer.bar-fixed { position: fixed; left: 0; bottom: 0; }
 .bar.bar-footer { height: 96px; font-size: 28px; }
 .bar.bar-footer > .item { -webkit-box-flex: 1; -webkit-flex: 1; flex: 1; text-align: center; color: #333; }
 .bar.bar-footer > .item .icon { font-size: 32px; }
