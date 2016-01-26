@@ -1,3 +1,4 @@
+/* 协议 */
 .agreement { display: block; padding: 40px; word-break: break-all; }
 .agreement .title { text-align: center; font-size: 32px; line-height: 36px; font-weight: 400; color: #000; margin: 0 auto 40px; }
 .agreement .content { color: #666; font-size: 28px; }
