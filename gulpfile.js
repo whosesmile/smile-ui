@@ -60,7 +60,7 @@ gulp.task('concat:css', ['px2rem'], function () {
 // insert debug css
 gulp.task('concat:debug', ['concat:css'], function () {
   return gulp.src(target + '/css/ui.css')
-    .pipe(insert.prepend('@media only screen and (min-device-width:1366px) {body { max-width: 750px; margin-left: auto !important; margin-right: auto !important; }}'))
+    .pipe(insert.prepend('/*! 警告：调试使用 线上需删除 */\n@media only screen and (min-device-width:1366px) {body { max-width: 750px; margin-left: auto !important; margin-right: auto !important; }}\n\n'))
     .pipe(gulp.dest(target + '/css'))
     .pipe(connect.reload());
 });
