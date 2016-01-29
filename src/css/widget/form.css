@@ -1,5 +1,6 @@
 /* 表单 */
-.list > .item.item-input button, .list > .item.item-input input, .list > .item.item-input select, .list > .item.item-input textarea { -webkit-appearance: none; font-size: 30px; width: 100%; padding: 0; margin: 0; border: none; background-color: transparent }
+.list > .item.item-input button, .list > .item.item-input input, .list > .item.item-input select, .list > .item.item-input textarea { -webkit-appearance: none; font-size: 30px; width: 100%; padding: 0; margin: 0; border: none; background-color: transparent; }
+.list > .item.item-input button[disabled], .list > .item.item-input button.disabled { background-color: transparent !important; border: none !important; }
 .list > .item.item-input input { color: #333; padding-top: 10px; padding-bottom: 10px; }
 .list > .item.item-input .label { margin-left: 0; margin-right: 30px; min-width: 64px; }
 .list > .item.item-input .label[ui-mode~="96px"] { min-width: 96px; }
