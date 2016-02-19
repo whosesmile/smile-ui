@@ -5,3 +5,8 @@
 
 ## 构建：
 ### gulp dist
+
+
+演示：
+
+[demo](http://whosesmile.github.io/ui/)
