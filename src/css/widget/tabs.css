@@ -1,5 +1,5 @@
 /* 选项卡 */
 .tabs { display: -webkit-box; display: -webkit-flex; display: flex; height: 88px; line-height: 88px; font-size: 30px; background-color: #fff; margin-top: 20px; margin-bottom: 20px; text-align: center; }
 .tabs.compact { margin-top: 0; margin-bottom: 0; }
-.tabs > .item { -webkit-box-flex: 1; -webkit-flex: 1; flex: 1; color: #333; cursor: pointer; background: -webkit-gradient(linear, left top, left bottom, from(#e5e5e5), to(#e5e5e5)) bottom left no-repeat; background: -webkit-linear-gradient(#e5e5e5, #e5e5e5) bottom left no-repeat; background: linear-gradient(#e5e5e5, #e5e5e5) bottom left no-repeat; background-size: 100% 1px; }
+.tabs > .item { display: block; -webkit-box-flex: 1; -webkit-flex: 1; flex: 1; color: #333; cursor: pointer; background: -webkit-gradient(linear, left top, left bottom, from(#e5e5e5), to(#e5e5e5)) bottom left no-repeat; background: -webkit-linear-gradient(#e5e5e5, #e5e5e5) bottom left no-repeat; background: linear-gradient(#e5e5e5, #e5e5e5) bottom left no-repeat; background-size: 100% 1px; }
 .tabs > .item.active { border-bottom: 3px solid #ff5a32; color: #ff5a32; background-size: 0 0; }

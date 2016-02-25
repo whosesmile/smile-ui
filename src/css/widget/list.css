@@ -18,7 +18,7 @@
 .list.thread > .item:last-child { background-size: 0 0, 0 0, 0 0, 100% 1px; }
 
 /* 内容排版 */
-.list > .item > .text, .list > .item > .extra { -webkit-box-flex: 1; -webkit-flex: 1; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.list > .item > .text, .list > .item > .extra { display: block; -webkit-box-flex: 1; -webkit-flex: 1; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .list > .item > .extra { color: #999; font-size: 28px; text-align: right; }
 
 /* 表头定义 */
