@@ -1,7 +1,4 @@
-.switch-checkbox{
-  position: relative;
-}
-.switch-checkbox>input[type=checkbox] {
+input[ui-mode~='switch'] {
   width: 120px;
   height: 60px;
   z-index: 2;
@@ -10,7 +7,7 @@
   top: 0;
 }
 
-.switch-checkbox>input[type=checkbox] {
+input[ui-mode~='switch'] {
   display: block;
   position: relative;
   cursor: pointer;
@@ -22,8 +19,8 @@
   background-color: #dddddd;
   border-radius: 60px;
 }
-.switch-checkbox>input[type=checkbox]:before,
-.switch-checkbox>input[type=checkbox]:after {
+input[ui-mode~='switch']:before,
+input[ui-mode~='switch']:after {
   display: block;
   position: absolute;
   top: 1px;
@@ -34,13 +31,13 @@
   height: auto;
   border:none;
 }
-.switch-checkbox>input[type=checkbox]:before {
+input[ui-mode~='switch']:before {
   right: 1px;
   background-color: #f1f1f1;
   border-radius: 60px;
   transition: background 0.2s;
 }
-.switch-checkbox>input[type=checkbox]:after {
+input[ui-mode~='switch']:after {
   -webkit-transform: rotate(0);
   transform: rotate(0);
   -webkit-transform: rotate(0);
@@ -52,15 +49,15 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: margin 0.2s;
 }
-.switch-checkbox>input[type=checkbox]:checked:before {
+input[ui-mode~='switch']:checked:before {
   background-color: #ff5a32;
 }
-.switch-checkbox>input[type=checkbox]:checked:after {
+input[ui-mode~='switch']:checked:after {
   margin-left: 60px;
 }
-.switch-checkbox>input[type='checkbox'][disabled]:before{
+input[type='checkbox'][disabled]:before{
   background: #ccc;
 }
-.switch-checkbox>input[type='checkbox'][disabled]:checked:before{
+input[type='checkbox'][disabled]:checked:before{
   background: #F3876D;
 }
