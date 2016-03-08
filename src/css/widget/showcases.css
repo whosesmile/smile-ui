@@ -1,17 +1,19 @@
 /* 橱窗 */
 .showcases { margin: 20px; line-height: 1; }
 .showcases .header { padding: 20px 0; }
-.showcases .header .title { font-size: 30px; padding-left: 20px; border-left: 8px solid #ff504b; line-height: 34px; }
-.showcases .item { position: relative; display: block; -webkit-flex-basis: 35%; flex-basis: 35%; min-width: 35%; max-width: calc(50% - 10px); margin-bottom: 20px; color: #666; background-color: #fff; }
-.showcases .item:nth-child(2n) { margin-right: 0; }
-.showcases .item .figure { padding-top: 100%; }
-.showcases .item .text { padding: 20px; border-top: 1px solid #e5e5e5; }
-.showcases .item .name { font-size: 30px; margin-bottom: 10px; }
-.showcases .item .brief { font-style: 24px; }
-.showcases .item .brief .split { margin-right: 20px; }
-.showcases .item .sellout { position: absolute; top: 50px; left: 12px; width: 148px; height: 44px; }
+.showcases .header .title { font-size: 30px; padding-left: 20px; border-left: 8px solid #ff504b; line-height: 34px; display: inline-block; line-height: 1rem; }
+.showcases .content { margin-left: -10px; margin-right: -10px; }
+.showcases .content:after { content: '\0200'; visibility: hidden; clear: both; display: block; font-size: 0; height: 0; }
+.showcases .content .item { float: left; width: 50%; padding: 10px; color: #666; }
+.showcases .content .item .figure { padding-top: 100%; }
+.showcases .content .item .panel { position: relative; background-color: #fff; }
+.showcases .content .item .text { padding: 20px; border-top: 1px solid #e5e5e5; }
+.showcases .content .item .name { font-size: 30px; margin-bottom: 10px; }
+.showcases .content .item .brief { font-style: 24px; }
+.showcases .content .item .brief .split { margin-right: 20px; }
+.showcases .content .item .sellout { position: absolute; top: 50px; left: 12px; width: 148px; height: 44px; }
 
 /* 内嵌模式 */
 .showcases.inset { background-color: #fff; padding-left: 20px; padding-right: 20px; }
 .showcases.inset .header { padding-top: 30px; padding-bottom: 30px; }
-.showcases.inset .item .text { border-top: none; padding-left: 0; padding-right: 0; }
+.showcases.inset .content .item .text { border-top: none; padding-left: 0; padding-right: 0; }
