@@ -22,10 +22,8 @@
   if (!metaEl) {
     metaEl = document.createElement('meta');
     metaEl.setAttribute('name', 'viewport');
-    var matches = navigator.userAgent.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i);
-    var UCversion = navigator.userAgent.match(/U3\/((\d+|\.){5,})/i);
-
-    if (!matches || matches && matches[1] > 534 || UCversion && parseInt(UCversion[1].split('.').join(''), 10) >= 80) {
+    var support = navigator.userAgent.match(/iphone|ipad|macintosh/gi);
+    if (support) {
       metaEl.setAttribute('content', 'width=device-width,user-scalable=no,initial-scale=' + scale + ',maximum-scale=' + scale + ', minimum-scale=' + scale);
       if (docEl.firstElementChild) {
         docEl.firstElementChild.appendChild(metaEl);
@@ -71,12 +69,3 @@
   }, false);
   setUnitA();
 })(window);
-
-// 移动端
-if (/(iphone|ipad|ipod|ios|android|iemobile)/i.test(navigator.userAgent)) {
-
-}
-// PC
-else {
-
-}
