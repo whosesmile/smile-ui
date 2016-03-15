@@ -1,63 +1,57 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>按钮</title>
-  <meta charset="utf-8" />
-  <meta content="yes" name="apple-touch-fullscreen" />
-  <meta content="yes" name="apple-mobile-web-app-capable" />
-  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
-  <meta content="telephone=no,email=no,address=no" name="format-detection" />
-  <script type="text/javascript" src="./js/flexible.js"></script>
-  <link rel="stylesheet" type="text/css" href="./css/ui.css" />
-  <style type="text/css">
-    .button {margin-top: 10px;margin-bottom: 10px;}
-  </style>
-</head>
-<body class="light" ontouchstart="">
-  <div class="bar bar-header">
-    <a href="index.html"><i class="icon">&#xe60e;</i></a>
-    <h1 class="title">按钮</h1>
-  </div>
-  <div class="hspace">
-    <button class="button">默认按钮（根据平台会不同，不建议使用）</button>
-    <button class="button primary">蓝色按钮</button>
-    <button class="button warning">橙色按钮</button>
-    <button class="button success">绿色按钮</button>
-    <button class="button default">白色按钮</button>
-    <button class="button transparent">透明按钮</button>
-    <button class="button success" disabled>禁用按钮</button>
-
-    <button class="button warning square">直角按钮</button>
-
-    <button class="button primary inline">内联按钮</button>
-    <button class="button warning inline">内联按钮</button>
-    <button class="button default inline">内联按钮</button>
-
-    <button class="button primary inline tiny">tiny按钮</button>
-    <button class="button warning inline little">little按钮</button>
-    <button class="button success inline small">small按钮</button>
-
-    <button class="button primary light">蓝边框按钮</button>
-    <button class="button warning light">橙边框按钮</button>
-    <button class="button success light">绿边框按钮</button>
-
-    <div class="button-group">
-      <button class="button primary light">按钮组合</button>
-      <button class="button warning">按钮组合</button>
+  <head>
+    <title>按钮</title>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="./js/flexible.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/ui.css" />
+    <style type="text/css">body.demo .button {margin-top: 10px;margin-bottom: 10px;}</style>
+  </head>
+  <body class="demo" ontouchstart="">
+    <div class="bar bar-header">
+      <a href="index.html"><i class="icon">&#xe60e;</i></a>
+      <h1 class="title">按钮</h1>
+      <a href=""><i class="icon">&#xe618;</i></a>
     </div>
+    <div class="hspace">
+      <button class="button" ui-mode="transparent">透明按钮</button>
+      <button class="button" ui-mode="success" disabled>禁用按钮</button>
+      <button class="button">默认按钮</button>
+      <button class="button" ui-mode="primary">蓝色按钮</button>
+      <button class="button" ui-mode="warning">橙色按钮</button>
+      <button class="button" ui-mode="success">绿色按钮</button>
+      <button class="button" ui-mode="square primary">直角按钮</button>
+      <button class="button" ui-mode="primary hollow">蓝边框按钮</button>
+      <button class="button" ui-mode="warning hollow">橙边框按钮</button>
+      <button class="button" ui-mode="success hollow">绿边框按钮</button>
+      <div class="button-group">
+        <button class="button" ui-mode="primary">按钮组合</button>
+        <button class="button" ui-mode="warning">按钮组合</button>
+      </div>
+      <div class="button-group">
+        <button class="button" ui-mode="primary hollow">按钮组合</button>
+        <button class="button" ui-mode="warning hollow">按钮组合</button>
+        <button class="button" ui-mode="success hollow">按钮组合</button>
+      </div>
+      <button class="button" ui-mode="primary inline">内联按钮</button>
+      <button class="button" ui-mode="warning inline">内联按钮</button>
+      <button class="button" ui-mode="success inline">内联按钮</button>
 
-    <div class="button-group">
-      <button class="button primary">按钮组合</button>
-      <button class="button warning">按钮组合</button>
-      <button class="button success">按钮组合</button>
+      <div class="button-group">
+        <button class="button" ui-mode="primary hollow md">稍小按钮</button>
+        <button class="button" ui-mode="warning hollow md">稍小按钮</button>
+        <button class="button" ui-mode="success hollow md">稍小按钮</button>
+      </div>
+      <div class="button-group">
+        <button class="button" ui-mode="primary hollow sm">小型按钮</button>
+        <button class="button" ui-mode="warning hollow sm">小型按钮</button>
+        <button class="button" ui-mode="success hollow sm">小型按钮</button>
+      </div>
+      <div class="button-group">
+        <button class="button" ui-mode="primary hollow xs">特小按钮</button>
+        <button class="button" ui-mode="warning hollow xs">特小按钮</button>
+        <button class="button" ui-mode="success hollow xs">特小按钮</button>
+      </div>
     </div>
-
-    <div class="button-group">
-      <button class="button default">按钮组合</button>
-      <button class="button primary light">按钮组合</button>
-      <button class="button warning light">按钮组合</button>
-      <button class="button success light">按钮组合</button>
-    </div>
-  </div>
-</body>
+  </body>
 </html>

@@ -1,47 +1,47 @@
 /* 默认样式 */
-.button { display: inline-block; width: 100%; height: 86px; line-height: 86px; text-align: center; font-size: 36px; border-radius: 10px; padding: 0; cursor: pointer; border: 1px solid transparent; text-decoration: none; -webkit-background-origin: border-box; background-origin: border-box; }
+.button { display: inline-block; width: 100%; height: 86px; line-height: 84px; text-align: center; font-size: 36px; border-radius: 10px; padding: 0 32px; cursor: pointer; border: 1px solid transparent; text-decoration: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; -webkit-background-origin: border-box; background-origin: border-box; }
 
 /* 直角按钮 */
-.button.square { border-radius: 0; }
+.button[ui-mode~="square"] { border-radius: 0; }
 
 /* 小按钮 */
-.button.small { font-size: 32px; height: 80px; line-height: 78px; }
-.button.little { font-size: 28px; height: 70px; line-height: 68px; }
-.button.tiny { font-size: 24px; height: 60px; line-height: 60px; }
-.button.inline.tiny { padding-left: 20px; padding-right: 20px; }
+.button[ui-mode~="md"] { font-size: 32px; height: 80px; line-height: 78px; }
+.button[ui-mode~="sm"] { font-size: 28px; height: 70px; line-height: 68px; }
+.button[ui-mode~="xs"] { font-size: 24px; height: 60px; line-height: 60px; }
 
 /* 内联按钮 */
-.button.inline { width: auto; padding-left: 32px; padding-right: 32px; }
+.button[ui-mode~="inline"] { width: auto; }
+.button[ui-mode~="inline"][ui-mode~="tiny"] { padding-left: 20px; padding-right: 20px; }
+
+/* 默认按钮 */
+.button, .button[ui-mode~="default"] { background-color: #fff; color: #666; border-color: #ddd; }
+.button:active, .button[ui-mode~="default"]:active { background-color: #f8f8f8; }
 
 /* 蓝色按钮 */
-.button.primary { color: #fff; background-color: #0ae; }
-.button.primary:active { background-color: #0091cb; }
-.button.primary.light { color: #0ae; background-color: #fff; border-color: #0ae; }
-.button.primary.light:active { color: #fff; background-color: #0ae; }
+.button[ui-mode~="primary"] { color: #fff; background-color: #0ae; }
+.button[ui-mode~="primary"]:active { background-color: #0091cb; }
+.button[ui-mode~="primary"][ui-mode~="hollow"] { color: #0ae; background-color: #fff; border-color: #0ae; }
+.button[ui-mode~="primary"][ui-mode~="hollow"]:active { color: #fff; background-color: #0ae; }
 
 /* 橙色按钮 */
-.button.warning { color: #fff; background-color: #ff5a32; }
-.button.warning:active { background-color: #d84a2a; }
-.button.warning.light { color: #ff5a32; background-color: #fff; border-color: #ff5a32; }
-.button.warning.light:active { color: #fff; background-color: #ff5a32; }
+.button[ui-mode~="warning"] { color: #fff; background-color: #ff5a32; }
+.button[ui-mode~="warning"]:active { background-color: #d84a2a; }
+.button[ui-mode~="warning"][ui-mode~="hollow"] { color: #ff5a32; background-color: #fff; border-color: #ff5a32; }
+.button[ui-mode~="warning"][ui-mode~="hollow"]:active { color: #fff; background-color: #ff5a32; }
 
 /* 绿色按钮 */
-.button.success { color: #fff; background-color: #00bb44; }
-.button.success:active { background-color: #07a841; }
-.button.success.light { color: #00bb44; background-color: #fff; border-color: #00bb44; }
-.button.success.light:active { color: #fff; background-color: #00bb44; }
+.button[ui-mode~="success"] { color: #fff; background-color: #00bb44; }
+.button[ui-mode~="success"]:active { background-color: #07a841; }
+.button[ui-mode~="success"][ui-mode~="hollow"] { color: #00bb44; background-color: #fff; border-color: #00bb44; }
+.button[ui-mode~="success"][ui-mode~="hollow"]:active { color: #fff; background-color: #00bb44; }
 
-/* 白色按钮 */
-.button.default { background-color: #fff; color: #666; border-color: #ddd; }
-.button.default:active { background-color: #f8f8f8; }
+/* 按钮组合 */
+.button-group { margin-top: 10px; margin-bottom: 10px; display: -webkit-box; display: -webkit-flex; display: flex; -webkit-box-pack: center; -webkit-box-align: center; -webkit-align-items: center; align-items: center; }
+.button-group > .button { -webkit-box-flex: 1; -webkit-flex: 1; flex: 1; display: block; }
+.button-group > .button:not(:last-child) { margin-right: 20px; }
 
 /* 禁用按钮 */
 .button[disabled], .button.disabled { background-color: #ebebf0 !important; color: #d2d2d2 !important; border: 1px solid #ddd !important; pointer-events: none; cursor: not-allowed; }
 
-/* 按钮组合 */
-.button-group { margin-top: 10px; margin-bottom: 10px; display: -webkit-box; display: -webkit-flex; display: flex; width: 100%; }
-.button-group > .button { -webkit-box-flex: 1; -webkit-flex: 1; flex: 1; display: block; }
-.button-group > .button:not(:last-child) { margin-right: 20px; }
-
 /* 透明按钮 */
-.button.transparent, .button.transparent:active, .button.transparent[disabled], .button.transparent.disabled { background-color: transparent !important; border: none !important; }
+.button[ui-mode~="transparent"], .button[ui-mode~="transparent"]:active, .button[ui-mode~="transparent"][disabled], .button[ui-mode~="transparent"].disabled { background-color: transparent !important; border: none !important; }

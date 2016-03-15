@@ -1,57 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>弹性布局/栅格布局</title>
-  <meta charset="utf-8" />
-  <meta content="yes" name="apple-touch-fullscreen" />
-  <meta content="yes" name="apple-mobile-web-app-capable" />
-  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
-  <meta content="telephone=no,email=no,address=no" name="format-detection" />
-  <script type="text/javascript" src="./js/flexible.js"></script>
-  <link rel="stylesheet" type="text/css" href="./css/ui.css" />
-  <style type="text/css">
-  .flexbox {margin-top: 20px;}
-  .flexbox > .item {height: 2rem;background-color: #ddd;}
-  </style>
-</head>
-<body class="light" ontouchstart="">
-  <div class="bar bar-header">
-    <a href="index.html"><i class="icon">&#xe60e;</i></a>
-    <h1 class="title">弹性布局</h1>
-  </div>
-  <div class="hspace vspace">
-    <div class="flexbox">
-      <div class="item"></div>
+  <head>
+    <title>弹性布局/栅格布局</title>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="./js/flexible.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/ui.css" />
+    <style type="text/css">
+    body.demo .flexbox {margin-top: 20px;margin-bottom: 20px;}
+    body.demo .flexbox > .item {padding:1rem;background-color: #ddd;}
+    </style>
+  </head>
+  <body class="demo" ontouchstart="">
+    <div class="bar bar-header">
+      <a href="index.html"><i class="icon">&#xe60e;</i></a>
+      <h1 class="title">弹性布局</h1>
+      <a href=""><i class="icon">&#xe618;</i></a>
     </div>
+    <div class="divider">等分空间</div>
     <div class="flexbox">
-      <div class="item"></div>
-      <div class="item"></div>
+      <div class="item">内容</div>
+      <div class="item">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
+      <div class="item">内容</div>
+      <div class="item">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
     </div>
-    <div class="flexbox">
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
+
+    <div class="divider">紧凑栅格</div>
+    <div class="flexbox" ui-mode="compact">
+      <div class="item" style="background-color:#666;"></div>
+      <div class="item" style="background-color:#888;"></div>
+      <div class="item" style="background-color:#aaa;"></div>
+      <div class="item" style="background-color:#ddd;"></div>
     </div>
-    <div class="flexbox">
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-    </div>
-    <div class="flexbox">
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-    </div>
-  </div>
-</body>
+  </body>
 </html>

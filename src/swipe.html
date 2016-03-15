@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>滑动测试</title>
+  <meta charset="utf-8" />
+  <meta content="yes" name="apple-touch-fullscreen" />
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no,email=no,address=no" name="format-detection" />
+  <script src="./js/flexible.js"></script>
+  <script src="http://10.37.63.71:9000/static/vendor/zepto.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/ui.css" />
+  <style type="text/css">
+    /* 轮播 默认(750 * 700) */
+    .swipe { position: relative; overflow: hidden; padding-top: 93.33333%; }
+    .swipe > .wrap { position: absolute; left: 0; top: 0; overflow: hidden; }
+    .swipe > .wrap > .item { float: left; }
+    .swipe > .wrap > .item .autofix { padding-top: 93.33333%; }
+    .swipe > .pages { position: absolute; text-align: right; z-index: 10; bottom: 10px; width: 100%; padding-right: 30px; }
+    .swipe > .pages > a { display: inline-block; width: 0.5rem; height: 0.5rem; overflow: hidden; margin: 0 6px; border-radius: 100%; vertical-align: middle; border: 1px solid #ff6f21; }
+    .swipe > .pages > a.active { background-color: #ff6f21; }
+  </style>
+</head>
+<body class="light" ontouchstart="">
+  <div class="swipe">
+    <div class="wrap">
+      <div class="item">
+        <div class="autofix">
+          <img class="center-block" src="http://7xjyap.com2.z0.glb.qiniucdn.com/image-9d9572c7-19bc-48f1-8f67-c2c140add3bb.jpg?imageView2/1/w/750/h/700" />
+        </div>
+      </div>
+      <div class="item">
+        <div class="autofix">
+          <img class="center-block" src="http://7xjyap.com2.z0.glb.qiniucdn.com/image-9d9572c7-19bc-48f1-8f67-c2c140add3bb.jpg?imageView2/1/w/750/h/700" />
+        </div>
+      </div>
+      <div class="item">
+        <div class="autofix">
+          <img class="center-block" src="http://7xjyap.com2.z0.glb.qiniucdn.com/image-9d9572c7-19bc-48f1-8f67-c2c140add3bb.jpg?imageView2/1/w/750/h/700" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+
+    function swipe(selector) {
+      var index = 0;
+      var pages = null;
+      var items = $(selector).find('.wrap > .item');
+      var basis = $(selector).prop('offsetWidth');
+
+      // 添加分页
+      if (items.length > 1) {
+        var frag = '';
+        for (var i=0;i<items.length;i++) {
+          frag += '<a class=""></a>';
+        }
+        var foot = $('<div class="pages" />').html(frag);
+        pages = foot.children();
+        pages.eq(index).addClass('active');
+        $(selector).append(foot);
+      }
+
+      // 设置容器宽度
+      $(selector).find('.wrap').css('width', basis * items.length);
+
+      // 设置元素宽度
+      items.forEach(function (item) {
+        $(item).css('width', basis);
+      });
+
+      // 移动效果
+      var running = false;
+
+      function move(index) {
+        running = true;
+        $('.swipe > .wrap').animate({
+          left: -index * basis
+        }, 350, 'ease-in-out', function () {
+          running = false;
+          pages.removeClass('active').eq(index).addClass('active');
+        });
+      }
+
+      // 左移
+      function move2left() {
+        if (!running) {
+          index = Math.min(index + 1, items.length - 1);
+          move(index);
+        }
+      }
+
+      // 右移
+      function move2right() {
+        if (!running) {
+          index = Math.max(index - 1, 0);
+          move(index);
+        }
+      }
+
+      // 记录起始点
+      var xDown = null;
+      var yDown = null;
+
+      // 移动判断
+      function handleMove(evt) {
+        evt.preventDefault();
+        var xUp = evt.touches[0].clientX;
+        var yUp = evt.touches[0].clientY;
+
+        var xDiff = xDown - xUp;
+        var yDiff = yDown - yUp;
+
+        // 水平移动
+        if (Math.abs(xDiff) > Math.abs(yDiff) && Math.abs(xDiff) > 200) {
+          if (xDiff > 0) {
+            /* left swipe */
+            move2left();
+          }
+          else {
+            /* right swipe */
+            move2right();
+          }
+        }
+      }
+
+      // 开始
+      $(selector).on('touchstart', function (evt) {
+        xDown = evt.touches[0].clientX;
+        yDown = evt.touches[0].clientY;
+        $(document).on('touchmove', handleMove);
+      });
+
+      // 结束
+      $(document).on('touchend', function (evt) {
+        $(document).off('touchmove', handleMove);
+      });
+    }
+
+    swipe('.swipe');
+
+  </script>
+  <div id="text" style="font-size:2rem; text-align: center; "></div>
+
+</body>
+</html>

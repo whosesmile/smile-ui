@@ -2,7 +2,7 @@
 .showcases { margin: 20px; line-height: 1; }
 .showcases .header { padding: 20px 0; }
 .showcases .header .title { font-size: 30px; padding-left: 20px; border-left: 8px solid #ff504b; line-height: 34px; display: inline-block; line-height: 1rem; }
-.showcases .content { margin-left: -10px; margin-right: -10px; }
+.showcases .content { margin-left: -10px; margin-right: -10px; margin-top: -10px; }
 .showcases .content:after { content: '\0200'; visibility: hidden; clear: both; display: block; font-size: 0; height: 0; }
 .showcases .content .item { float: left; width: 50%; padding: 10px; color: #666; }
 .showcases .content .item .figure { padding-top: 100%; }
