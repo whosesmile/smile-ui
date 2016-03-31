@@ -1,5 +1,5 @@
 /* 橱窗 */
-.showcases { margin: 20px; line-height: 1; }
+.showcases { margin: 20px; }
 .showcases .header { padding: 20px 0; }
 .showcases .header .title { font-size: 30px; padding-left: 20px; border-left: 8px solid #ff504b; line-height: 34px; display: inline-block; line-height: 1rem; }
 .showcases .content { margin-left: -10px; margin-right: -10px; margin-top: -10px; }
@@ -7,8 +7,8 @@
 .showcases .content .item { float: left; width: 50%; padding: 10px; color: #666; }
 .showcases .content .item .figure { padding-top: 100%; }
 .showcases .content .item .panel { position: relative; background-color: #fff; }
-.showcases .content .item .text { padding: 20px; border-top: 1px solid #e5e5e5; }
-.showcases .content .item .name { font-size: 30px; margin-bottom: 10px; }
+.showcases .content .item .text { padding: 15px 20px; border-top: 1px solid #e5e5e5; }
+.showcases .content .item .name { font-size: 30px; margin-bottom: 5px; }
 .showcases .content .item .brief { font-style: 24px; }
 .showcases .content .item .brief .split { margin-right: 20px; }
 .showcases .content .item .sellout { position: absolute; top: 50px; left: 12px; width: 148px; height: 44px; }
