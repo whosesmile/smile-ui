@@ -11,9 +11,10 @@
     <link rel="stylesheet" type="text/css" href="./css/ui.css" />
   </head>
   <body class="light" ontouchstart="">
-    <div class="bar bar-header">
+    <div class="bar" ui-mode="header">
       <a href="index.html"><i class="icon">&#xe60e;</i></a>
       <h1 class="title">列表</h1>
+      <a href=""><i class="icon">&#xe618;</i></a>
     </div>
     <div class="list">
       <div class="item-divider">单行文本<span class="text-xs text-light">（边框缩进）</span></div>
@@ -27,7 +28,7 @@
         如果你希望长文本不要自动隐藏，而是换行显示，比如这样，那么可以参考这个例子
       </div>
     </div>
-    <div class="list thread">
+    <div class="list" ui-mode="thread">
       <div class="item-divider">单行文本<span class="text-xs text-light">（边框通栏）</span></div>
       <div class="item">
         <span class="text">少年时光</span>
@@ -45,7 +46,7 @@
       <div class="item">
         <span class="text">少年时光</span>
         <span class="extra">
-          <button class="button inline primary light tiny">一个按钮</button>
+          <button class="button" ui-mode="inline xs">一个按钮</button>
         </span>
       </div>
     </div>
@@ -117,9 +118,9 @@
       <div class="item-divider">头像组合</div>
       <div class="item">
         <div class="avatar">
-          <img class="round" src="http://img4.duitang.com/uploads/item/201209/08/20120908175146_SwckL.jpeg" ui-mode="58px" />
+          <img src="http://img4.duitang.com/uploads/item/201209/08/20120908175146_SwckL.jpeg" ui-mode="58px round" />
         </div>
-        <span class="text">圆角矩形</span>
+        <span class="text">圆形头像</span>
       </div>
       <div class="item">
         <div class="avatar">

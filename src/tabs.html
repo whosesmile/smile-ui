@@ -11,9 +11,10 @@
   <link rel="stylesheet" type="text/css" href="./css/ui.css" />
 </head>
 <body class="light" ontouchstart="">
-  <div class="bar bar-header">
+  <div class="bar" ui-mode="header">
     <a href="index.html"><i class="icon">&#xe60e;</i></a>
     <h1 class="title">选项卡</h1>
+    <a href=""><i class="icon">&#xe618;</i></a>
   </div>
   <div class="hspace vspace">
     <div class="tabs">
@@ -27,11 +28,13 @@
       <a class="item">他的</a>
     </div>
 
-    <div class="tabs">
-      <a class="item">乐购</a>
-      <a class="item">管家</a>
-      <a class="item active">邻聚</a>
-      <a class="item">我的</a>
+    <div class="bar" ui-mode="footer fixed flat">
+      <div class="tabs" ui-mode="compact">
+        <a class="item">乐购</a>
+        <a class="item">管家</a>
+        <a class="item active">邻聚</a>
+        <a class="item">我的</a>
+      </div>
     </div>
   </div>
 </body>

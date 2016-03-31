@@ -14,6 +14,6 @@
 .showcases .content .item .sellout { position: absolute; top: 50px; left: 12px; width: 148px; height: 44px; }
 
 /* 内嵌模式 */
-.showcases.inset { background-color: #fff; padding-left: 20px; padding-right: 20px; }
-.showcases.inset .header { padding-top: 30px; padding-bottom: 30px; }
-.showcases.inset .content .item .text { border-top: none; padding-left: 0; padding-right: 0; }
+.showcases[ui-mode~="inset"] { background-color: #fff; padding-left: 20px; padding-right: 20px; }
+.showcases[ui-mode~="inset"] .header { padding-top: 30px; padding-bottom: 30px; }
+.showcases[ui-mode~="inset"] .content .item .text { border-top: none; padding-left: 0; padding-right: 0; }

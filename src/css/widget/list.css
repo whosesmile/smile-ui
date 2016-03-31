@@ -1,7 +1,7 @@
 /* 缩进列表 */
 .list { margin-top: 20px; margin-bottom: 20px; }
-.list.compact { margin-top: 0; margin-bottom: 0; }
-.list.overlap { margin-top: -1px; }
+.list[ui-mode~="compact"] { margin-top: 0; margin-bottom: 0; }
+.list[ui-mode~="overlap"] { margin-top: -1px; }
 .list > .item { display: -webkit-box; display: -webkit-flex; display: flex; min-height: 88px; padding: 12px 30px; color: #333; text-align: left; overflow: hidden; -webkit-box-pack: center; -webkit-box-align: center; -webkit-align-items: center; align-items: center; background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) left top no-repeat, -webkit-gradient(linear, left bottom, left top, from(#fff), to(#fff)) left bottom no-repeat, -webkit-gradient(linear, left top, left bottom, from(#e5e5e5), to(#e5e5e5)) left top no-repeat, -webkit-gradient(linear, left bottom, left top, from(#e5e5e5), to(#e5e5e5)) left bottom no-repeat #fff; background: -webkit-linear-gradient(#fff, #fff) left top no-repeat, -webkit-linear-gradient(#fff, #fff) left bottom no-repeat, -webkit-linear-gradient(#e5e5e5, #e5e5e5) left top no-repeat, -webkit-linear-gradient(#e5e5e5, #e5e5e5) left bottom no-repeat #fff; background: linear-gradient(#fff, #fff) left top no-repeat, linear-gradient(#fff, #fff) left bottom no-repeat, linear-gradient(#e5e5e5, #e5e5e5) left top no-repeat, linear-gradient(#e5e5e5, #e5e5e5) left bottom no-repeat #fff; background-size: 30px 1px, 30px 1px, 0 0, 100% 1px; }
 .list > .item:first-child { background-size: 0 0, 30px 1px, 100% 1px, 100% 1px; }
 .list > .item:last-child { background-size: 30px 1px, 0 0, 0 0, 100% 1px; }
@@ -14,9 +14,9 @@
 .list > .item[ui-mode~="30px"] { padding-top: 30px; padding-bottom: 30px; }
 
 /* 通栏列表 */
-.list.thread > .item { background-size: 0 0, 0 0, 0 0, 100% 1px; }
-.list.thread > .item:first-child { background-size: 0 0, 0 0, 100% 1px, 100% 1px; }
-.list.thread > .item:last-child { background-size: 0 0, 0 0, 0 0, 100% 1px; }
+.list[ui-mode~="thread"] > .item { background-size: 0 0, 0 0, 0 0, 100% 1px; }
+.list[ui-mode~="thread"] > .item:first-child { background-size: 0 0, 0 0, 100% 1px, 100% 1px; }
+.list[ui-mode~="thread"] > .item:last-child { background-size: 0 0, 0 0, 0 0, 100% 1px; }
 
 /* 内容排版 */
 .list > .item > .text, .list > .item > .extra { display: block; -webkit-box-flex: 1; -webkit-flex: 1; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -27,7 +27,7 @@
 .list > .item-divider.alike { display: -webkit-box; display: -webkit-flex; display: flex; -webkit-box-pack: center; -webkit-box-align: center; -webkit-align-items: center; align-items: center; min-height: 88px; }
 .list > .item-divider + .item { background-size: 0 0, 30px 1px, 100% 1px, 100% 1px; }
 .list > .item-divider + .item:last-child { background-size: 0 0, 0 0, 100% 1px, 100% 1px; }
-.list.thread > .item-divider + .item { background-size: 0 0, 0 0, 100% 1px, 100% 1px; }
+.list[ui-mode~="thread"] > .item-divider + .item { background-size: 0 0, 0 0, 100% 1px, 100% 1px; }
 
 /* ICON定义 */
 .list > .item > .icon:first-child { min-width: 32px; text-align: left; margin-right: 16px; }
@@ -38,11 +38,11 @@
 
 /* 头像排版 */
 .list > .item > .avatar { margin-right: 20px; }
-.list > .item > .avatar img, .list > .item > .avatar img[ui-mode="58px"] { display: block; width: 58px; height: 58px; }
+.list > .item > .avatar img, .list > .item > .avatar img[ui-mode~="58px"] { display: block; width: 58px; height: 58px; }
 .list > .item > .avatar img[ui-mode~="32px"] { width: 32px; height: 32px; }
 .list > .item > .avatar img[ui-mode~="50px"] { width: 50px; height: 50px; }
 .list > .item > .avatar img[ui-mode~="80px"] { width: 80px; height: 80px; }
 .list > .item > .avatar img[ui-mode~="90px"] { width: 90px; height: 90px; }
 .list > .item > .avatar img[ui-mode~="110px"] { width: 110px; height: 110px; }
 .list > .item > .avatar img[ui-mode~="120px"] { width: 120px; height: 120px; }
-.list > .item > .avatar img.round { border-radius: 5px; box-shadow: 0 0 3px rgba(0, 0, 0, 0.1); }
+.list > .item > .avatar img[ui-mode~="round"] { border-radius: 50%; }

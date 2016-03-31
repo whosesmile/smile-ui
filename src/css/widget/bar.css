@@ -1,15 +1,15 @@
 /* 顶部导航 */
-.bar { display: -webkit-box; display: -webkit-flex; display: flex; width: 100%; height: 88px; padding: 12px 30px; color: #333; text-align: left; overflow: hidden; -webkit-box-pack: center; -webkit-box-align: center; -webkit-align-items: center; align-items: center; -webkit-justify-content: space-between; justify-content: space-between; background: -webkit-gradient(linear, left top, left bottom, from(#e5e5e5), to(#e5e5e5)) left top no-repeat, -webkit-gradient(linear, left bottom, left top, from(#e5e5e5), to(#e5e5e5)) left bottom no-repeat #f9f9f9; background: -webkit-linear-gradient(#e5e5e5, #e5e5e5) left top no-repeat, -webkit-linear-gradient(#e5e5e5, #e5e5e5) left bottom no-repeat #f9f9f9; background: linear-gradient(#e5e5e5, #e5e5e5) left top no-repeat, linear-gradient(#e5e5e5, #e5e5e5) left bottom no-repeat #f9f9f9; background-size: 100% 1px, 100% 1px; position: relative; }
+.bar { display: -webkit-box; display: -webkit-flex; display: flex; width: 100%; height: 88px; color: #333; text-align: left; overflow: hidden; -webkit-box-pack: center; -webkit-box-align: center; -webkit-align-items: center; align-items: center; -webkit-justify-content: space-between; justify-content: space-between; background: -webkit-gradient(linear, left top, left bottom, from(#e5e5e5), to(#e5e5e5)) left top no-repeat, -webkit-gradient(linear, left bottom, left top, from(#e5e5e5), to(#e5e5e5)) left bottom no-repeat #f9f9f9; background: -webkit-linear-gradient(#e5e5e5, #e5e5e5) left top no-repeat, -webkit-linear-gradient(#e5e5e5, #e5e5e5) left bottom no-repeat #f9f9f9; background: linear-gradient(#e5e5e5, #e5e5e5) left top no-repeat, linear-gradient(#e5e5e5, #e5e5e5) left bottom no-repeat #f9f9f9; background-size: 100% 1px, 100% 1px; position: relative; }
 .bar > h1, .bar > .title { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-align: center; font-size: 34px; font-weight: 500; line-height: 88px; position: absolute; top: 0; bottom: 0; left: 15%; right: 15%; }
-.bar.bar-header .icon { color: #999; font-size: 32px; min-width: 32px; }
-.bar.bar-header > a { padding: 20px 30px; display: block; }
-.bar.bar-header > a:first-child { margin-left: -30px; position: absolute; left: 30px; top: 0; height: 88px; }
-.bar.bar-header > a:last-child { margin-right: -30px; position: absolute; right: 30px; top: 0; height: 88px; }
-.bar.bar-footer { height: 96px; font-size: 28px; }
-.bar.bar-footer > .item { -webkit-box-flex: 1; -webkit-flex: 1; flex: 1; text-align: center; color: #333; display: block; }
-.bar.bar-footer > .item .icon { font-size: 32px; }
-.bar.bar-footer > .item span { display: block; font-size: 24px; }
-.bar.bar-footer > .item.active { color: #ff5a32; }
-.bar.bar-footer > .button { display: block; }
-.bar.bar-footer.bar-fixed { position: fixed; left: 0; bottom: 0; z-index: 100; }
-.bar.bar-footer.bar-flat { height: 88px; padding: 0; background-size: 100% 1px, 0 0; }
+.bar > .item { -webkit-box-flex: 1; -webkit-flex: 1; flex: 1; text-align: center; color: #333; display: block; }
+.bar > .item .icon { font-size: 32px; }
+.bar > .item span { display: block; font-size: 24px; }
+.bar > .item.active { color: #ff5a32; }
+.bar > .button { display: block; }
+.bar[ui-mode~="header"] .icon { color: #999; font-size: 32px; min-width: 32px; }
+.bar[ui-mode~="header"] > a { padding: 20px 30px; display: block; }
+.bar[ui-mode~="header"] > a:not(.item):first-child { margin-left: -30px; position: absolute; left: 30px; top: 0; height: 88px; }
+.bar[ui-mode~="header"] > a:not(.item):last-child { margin-right: -30px; position: absolute; right: 30px; top: 0; height: 88px; }
+.bar[ui-mode~="footer"] { height: 96px; font-size: 28px; }
+.bar[ui-mode~="footer"][ui-mode~="fixed"] { position: fixed; left: 0; bottom: 0; z-index: 100; }
+.bar[ui-mode~="footer"][ui-mode~="flat"] { height: 88px; background-size: 100% 1px, 0 0; }
