@@ -12,4 +12,4 @@
 .bar[ui-mode~="header"] > a:not(.item):last-child { margin-right: -30px; position: absolute; right: 30px; top: 0; height: 88px; }
 .bar[ui-mode~="footer"] { height: 96px; font-size: 28px; }
 .bar[ui-mode~="footer"][ui-mode~="fixed"] { position: fixed; left: 0; bottom: 0; z-index: 100; }
-.bar[ui-mode~="footer"][ui-mode~="flat"] { height: 88px; background-size: 100% 1px, 0 0; }
+.bar[ui-mode~="footer"][ui-mode~="flat"] { height: 88px; background-size: 0 0, 0 0; }

@@ -22,4 +22,4 @@ a { color: #0af; text-decoration: none; }
 .autofix { position: relative; display: block; overflow: hidden; background: transparent url(http://7xjyap.com2.z0.glb.qiniucdn.com/image-54e0f386-9121-4ca2-bde7-0bdd3ffedb84.png) center center no-repeat; background-size: 64px 48px; }
 .autofix > img { position: absolute; top: 0; left: 0; width: 100%; }
 .autofix > img.cover { min-height: 100%; }
-.round { border-radius: 10px; overflow: hidden; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05); }
+.has-footer { margin-bottom: 116px; }
