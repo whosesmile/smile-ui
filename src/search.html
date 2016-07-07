@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>搜索</title>
+    <meta charset="utf-8" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no,email=no,address=no" name="format-detection" />
+    <script type="text/javascript" src="./js/flexible.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/ui.css" />
+  </head>
+  <body class="light" ontouchstart="">
+
+    <!-- <div class="weui_search_bar" id="search_bar">
+      <form class="weui_search_outer">
+        <div class="weui_search_inner">
+          <i class="weui_icon_search"></i>
+          <input type="search" class="weui_search_input" id="search_input" placeholder="搜索" required="">
+          <a href="javascript:" class="weui_icon_clear" id="search_clear"></a>
+        </div>
+        <label for="search_input" class="weui_search_text" id="search_text">
+          <i class="weui_icon_search"></i>
+          <span>搜索</span>
+        </label>
+      </form>
+      <a href="javascript:" class="weui_search_cancel" id="search_cancel">取消</a>
+    </div> -->
+
+    <form>
+      <div class="list" ui-mode="compact overlap">
+        <div class="item item-input" ui-mode="search">
+          <div class="outer">
+            <div class="inner">
+              <i class="icon text-gray">&#xe600;</i>
+              <span class="control">
+                <input type="search" placeholder="搜索" id="search" />
+              </span>
+              <a class="button" ui-mode="transparent xs">取消</a>
+            </div>
+            <label class="layer" for="search">
+              <div class="tips">
+                <i class="icon text-gray">&#xe600;</i>
+                <span>搜索</span>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="list" ui-mode="compact overlap">
+        <div class="item">
+          <span class="text">条目内容</span>
+        </div>
+        <div class="item">
+          <span class="text">条目内容</span>
+        </div>
+        <div class="item">
+          <span class="text">条目内容</span>
+        </div>
+        <div class="item">
+          <span class="text">条目内容</span>
+        </div>
+      </div>
+    </form>
+
+    <script type="text/javascript" src="http://m2.iqdnet.com/static/vendor/zepto.js"></script>
+    <script type="text/javascript">
+      // 聚焦
+      $(document).on('click', '.item[ui-mode="search"] .layer', function() {
+        $(this).closest('.item').addClass('focus');
+      });
+      // 失焦
+      $(document).on('blur', '.item[ui-mode="search"] input[type="search"]', function() {
+        $(this).closest('.item').toggleClass('focus', $(this).val());
+      });
+      // 重置
+      $(document).on('click', '.item[ui-mode="search"] .button', function() {
+        $(this).closest('.item').removeClass('focus').find('input[type="search"]').val('');
+      });
+    </script>
+  </body>
+</html>

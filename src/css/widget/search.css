@@ -1,0 +1,10 @@
+.list > .item.item-input[ui-mode~="search"] { background-color: #f1f1f1 }
+.list > .item.item-input[ui-mode~="search"] .outer { position: relative; width: 100% }
+.list > .item.item-input[ui-mode~="search"] .inner { -webkit-box-flex: 1; -webkit-flex: 1; flex: 1; display: -webkit-box; display: -webkit-flex; display: flex; text-align: left; -webkit-box-pack: center; -webkit-box-align: center; -webkit-align-items: center; align-items: center; background-color: #fff; padding: 0  20px; border-radius: 10px; margin-right: 90px; }
+.list > .item.item-input[ui-mode~="search"] .inner .control { margin-right: 20px; }
+.list > .item.item-input[ui-mode~="search"] .inner .icon { min-width: 32px; text-align: left; margin-right: 16px }
+.list > .item.item-input[ui-mode~="search"] .inner .button { width: 120px; color: #0ae; padding-left: 30px; padding-right: 30px; font-size: 30px; margin-right: -140px; }
+.list > .item.item-input[ui-mode~="search"] .layer { position: absolute; top: 0; left: 0; right: 0; bottom: 0; text-align: center; display: -webkit-box; display: -webkit-flex; display: flex; -webkit-box-pack: center; -webkit-box-align: center; -webkit-align-items: center; align-items: center; background-color: #fff; border-radius: 10px }
+.list > .item.item-input[ui-mode~="search"] .layer .tips { margin: auto; font-size: 30px; color: #999 }
+.list > .item.item-input[ui-mode~="search"] .layer .tips .icon { min-width: 30px; }
+.list > .item.item-input[ui-mode~="search"].focus .layer { display: none; }

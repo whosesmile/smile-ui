@@ -1,0 +1,16 @@
+/* 弹窗 */
+.modal { position: fixed; top: 0; left: 0; right: 0; bottom: 0; margin: 0 auto; background-color: rgba(0, 0, 0, 0.3); z-index: 1000; width: 100%; display: -webkit-box; display: -webkit-flex; display: flex; -webkit-box-pack: center; -webkit-box-align: center; -webkit-align-items: center; align-items: center; }
+.modal[ui-mode~="hollow"] { background-color: rgba(0, 0, 0, 0); }
+.modal .panel { background: #fff; border-radius: 16px; overflow: hidden; color: #000; width: 560px; position: absolute; top: 45%; left: 50%; margin: -160px auto 200px -280px; line-height: 1.5; text-align: center; }
+.modal .title { font-weight: normal; font-size: 32px; padding-top: 24px; font-weight: 500; }
+.modal .text { padding: 12px 20px 20px; font-size: 30px; white-space: normal; }
+.modal .footer { display: block; border-top: 1px solid #e5e5e5; background-color: #fff; text-align: center; cursor: pointer; }
+.modal .footer button { height: 80px; color: #0ae; }
+.modal .footer button:active { background-color: #f9f9f9 !important; }
+.modal .button-group { margin-top: 0; margin-bottom: 0; }
+.modal .button-group > .button:not(:last-child) { margin-right: 0; border-right: 1px solid #e5e5e5 !important; font-weight: 500; }
+
+/* 支持弹性布局的手机正常处理 */
+@supports ((flex:1) or (-webkit-flex:1) or (-webkit-box-flex:1)) {
+  .modal .panel { position: static; -webkit-flex-basis: 560px; flex-basis: 560px; -webkit-flex-grow: 0; flex-grow: 0; min-height: auto; margin: auto; }
+}
