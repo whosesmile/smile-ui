@@ -10,6 +10,9 @@ input { line-height: normal; }
 i, em { font-style: normal; }
 h1, h2, h3, h4, h5, h6 { font-weight: normal; }
 a { color: #0af; text-decoration: none; }
+html[data-plat="pc"] body { max-width: 750px; margin-left: auto !important; margin-right: auto !important; }
+html[data-plat="pc"] .bar[ui-mode~="fixed"] { left: auto; max-width: 750px; }
+.bar[ui-mode~="header"][ui-mode~="fixed"] + section { margin-top: 88px; }
 
 .hide { display: none; }
 .show { display: block; }

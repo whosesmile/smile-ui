@@ -8,14 +8,13 @@
 /* 小按钮 */
 .button[ui-mode~="md"] { font-size: 32px; height: 80px; line-height: 78px; }
 .button[ui-mode~="sm"] { font-size: 28px; height: 70px; line-height: 68px; }
-.button[ui-mode~="xs"] { font-size: 24px; height: 60px; line-height: 60px; }
+.button[ui-mode~="xs"] { font-size: 26px; height: 60px; line-height: 60px; }
 
 /* 内联按钮 */
 .button[ui-mode~="inline"] { width: auto; }
-.button[ui-mode~="inline"][ui-mode~="xs"] { padding-left: 20px; padding-right: 20px; }
 
 /* 默认按钮 */
-.button[ui-mode~="default"] { background-color: #f9f9f9; color: #666; border-color: #ddd; }
+.button[ui-mode~="default"] { background-color: #f9f9f9; color: #666; border-color: #ccc; }
 .button[ui-mode~="default"]:active { background-color: #dedede; }
 
 /* 蓝色按钮 */
