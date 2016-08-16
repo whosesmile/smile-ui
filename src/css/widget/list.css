@@ -45,4 +45,4 @@
 .list > .item > .avatar img[ui-mode~="90px"] { width: 90px; height: 90px; }
 .list > .item > .avatar img[ui-mode~="110px"] { width: 110px; height: 110px; }
 .list > .item > .avatar img[ui-mode~="120px"] { width: 120px; height: 120px; }
-.list > .item > .avatar img.round { border-radius: 5px; box-shadow: 0 0 3px rgba(0, 0, 0, 0.1); }
+.list > .item > .avatar img.round { border-radius: 5px; box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1); }
