@@ -38,7 +38,7 @@
 .list > .item > .text > .brief { font-size: 26px; color: #999; line-height: 30px; margin-top: 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
 /* 头像排版 */
-.list > .item > .avatar { margin-right: 20px; overflow: hidden; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05); }
+.list > .item > .avatar { margin-right: 20px; overflow: hidden; box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.05); }
 .list > .item > .avatar[ui-mode~="5px"] { border-radius: 5px; }
 .list > .item > .avatar[ui-mode~="10px"] { border-radius: 10px; }
 .list > .item > .avatar[ui-mode~="20px"] { border-radius: 20px; }
