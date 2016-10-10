@@ -9,7 +9,7 @@
 .showcases .content .item .panel { position: relative; background-color: #fff; }
 .showcases .content .item .text { padding: 15px 20px; border-top: 1px solid #e5e5e5; }
 .showcases .content .item .name { font-size: 30px; margin-bottom: 5px; }
-.showcases .content .item .brief { font-style: 24px; }
+.showcases .content .item .brief { display: block; font-size: 28px; }
 .showcases .content .item .brief .split { margin-right: 20px; }
 .showcases .content .item .sellout { position: absolute; top: 50px; left: 12px; width: 148px; height: 44px; }
 
