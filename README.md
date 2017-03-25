@@ -1,3 +1,5 @@
+# 这套组件已经废弃，新项目请参考 [EXUI](https://github.com/whosesmile/exui)
+
 # 千丁前端 - 手机UI组件定制库
 
 ## 运行：
